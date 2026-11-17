@@ -1,6 +1,5 @@
 {
   "name": "codegraph",
-  "version": "0.1.0",
   "description": "The CodeGraph MCP server and its UserPromptSubmit hook that adds structural context to each prompt.",
   "author": {
     "name": "alexanderjerome",

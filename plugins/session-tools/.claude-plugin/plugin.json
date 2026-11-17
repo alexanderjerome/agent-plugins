@@ -1,6 +1,5 @@
 {
   "name": "session-tools",
-  "version": "0.1.1",
   "description": "Session housekeeping: hand off to a fresh session, edit CLAUDE.md and settings from a browser form.",
   "author": {
     "name": "alexanderjerome",

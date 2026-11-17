@@ -1,6 +1,6 @@
 # agent-plugins
 
-A plugin marketplace for Claude Code and Codex: a few plugins of my own plus pinned references to upstream plugins I use. Upstream plugins are not copied here; each entry points at the upstream repository at a fixed commit.
+A plugin marketplace for Claude Code and Codex: a few plugins of my own plus references to upstream plugins I use. Upstream plugins are not copied here; each entry follows the upstream repository's default branch, and my own plugins carry no version, so with auto-update on (`/plugin` → Marketplaces → Enable auto-update, or `"autoUpdate": true` on the `extraKnownMarketplaces` entry) every new commit reaches you. Without a GitHub SSH key, set `CLAUDE_CODE_PLUGIN_PREFER_HTTPS=1` or background updates fail. Codex has no auto-update: run `codex plugin marketplace upgrade`.
 
 ## Set it up with an agent
 
@@ -69,10 +69,10 @@ codex plugin add tstack@agent-plugins
 
 **codegraph** (own, Claude Code only): declares the CodeGraph MCP server and a hook that adds structural context to each prompt. Install the `codegraph` CLI separately.
 
-**archify** (upstream [tt-a1i/archify](https://github.com/tt-a1i/archify), Apache-2.0, pinned a406594): turns an idea, plan or codebase into an interactive architecture, sequence or data-flow diagram.
+**archify** (upstream [tt-a1i/archify](https://github.com/tt-a1i/archify), Apache-2.0): turns an idea, plan or codebase into an interactive architecture, sequence or data-flow diagram.
 
-**ponytail** (upstream [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail), MIT, pinned 96608e0): lazy-senior-dev mode, the simplest code that works. Hooks need `node`.
+**ponytail** (upstream [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail), MIT): lazy-senior-dev mode, the simplest code that works. Hooks need `node`.
 
-**caveman** (upstream [JuliusBrussee/caveman](https://github.com/JuliusBrussee/caveman), Apache-2.0, pinned 9b24366): ultra-compressed replies. Claude Code uses the repository root as the plugin; Codex uses its `plugins/caveman` directory. Hooks need `node`.
+**caveman** (upstream [JuliusBrussee/caveman](https://github.com/JuliusBrussee/caveman), Apache-2.0): ultra-compressed replies. Claude Code uses the repository root as the plugin; Codex uses its `plugins/caveman` directory. Hooks need `node`.
 
-**mcptoon** (upstream [activeing123/mcptoon](https://github.com/activeing123/mcptoon), Apache-2.0, pinned f50d199): the TOON gateway, which puts your other MCP servers behind a few compact tools. The Claude plugin declares the server and a setup command, but the binary is separate: `pip install mcptoon` (or your package manager), then `mcptoon quickstart`. Codex has no plugin from upstream; register the server yourself with `codex mcp add mcptoon -- mcptoon serve`.
+**mcptoon** (upstream [activeing123/mcptoon](https://github.com/activeing123/mcptoon), Apache-2.0): the TOON gateway, which puts your other MCP servers behind a few compact tools. The Claude plugin declares the server and a setup command, but the binary is separate: `pip install mcptoon` (or your package manager), then `mcptoon quickstart`. Codex has no plugin from upstream; register the server yourself with `codex mcp add mcptoon -- mcptoon serve`.
