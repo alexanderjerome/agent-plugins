@@ -1,0 +1,19 @@
+{
+  "name": "adr",
+  "version": "0.1.0",
+  "description": "Write, accept, reject or supersede Architecture Decision Records, with templates and scripts.",
+  "author": {
+    "name": "alexanderjerome",
+    "url": "https://github.com/alexanderjerome"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "adr",
+    "shortDescription": "Write, accept, reject or supersede Architecture Decision Records, with templates and scripts.",
+    "developerName": "alexanderjerome",
+    "category": "Productivity",
+    "capabilities": [
+      "Instructions"
+    ]
+  }
+}

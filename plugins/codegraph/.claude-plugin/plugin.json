@@ -1,0 +1,14 @@
+{
+  "name": "codegraph",
+  "version": "0.1.0",
+  "description": "The CodeGraph MCP server and its UserPromptSubmit hook that adds structural context to each prompt.",
+  "author": {
+    "name": "alexanderjerome",
+    "email": "55066940+alexanderjerome@users.noreply.github.com"
+  },
+  "keywords": [
+    "mcp",
+    "hooks",
+    "code-search"
+  ]
+}

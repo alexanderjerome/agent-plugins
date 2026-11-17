@@ -1,0 +1,59 @@
+{
+  "name": "agent-plugins",
+  "interface": {
+    "displayName": "agent-plugins"
+  },
+  "plugins": [
+    {
+      "name": "tstack",
+      "source": {
+        "source": "local",
+        "path": "./plugins/tstack"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "adr",
+      "source": {
+        "source": "local",
+        "path": "./plugins/adr"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "ponytail",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/DietrichGebert/ponytail.git",
+        "sha": "96608e078b2d5ea607c5c3b8b5a54d1c1fba6846"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "caveman",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/JuliusBrussee/caveman.git",
+        "path": "plugins/caveman",
+        "sha": "9b243662ff98d392bc0a95b865a554583d71be75"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "name": "tstack",
+  "version": "0.1.0",
+  "description": "Shipping a change: full-send, full-stop, sol-loop, council, babysit-pr, file-pr, modernize, takeover, leaving-pr-comments.",
+  "author": {
+    "name": "alexanderjerome",
+    "url": "https://github.com/alexanderjerome"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "tstack",
+    "shortDescription": "Shipping a change: full-send, full-stop, sol-loop, council, babysit-pr, file-pr, modernize, takeover",
+    "developerName": "alexanderjerome",
+    "category": "Productivity",
+    "capabilities": [
+      "Instructions"
+    ]
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "name": "agent-plugins",
+  "owner": {
+    "name": "alexanderjerome",
+    "email": "55066940+alexanderjerome@users.noreply.github.com"
+  },
+  "metadata": {
+    "description": "Plugins for Claude Code and Codex: shipping workflow, ADRs, session tools, CodeGraph, plus pinned upstream plugins.",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "tstack",
+      "source": "./plugins/tstack",
+      "description": "Shipping a change: full-send, full-stop, sol-loop, council, babysit-pr, file-pr, modernize, takeover, leaving-pr-comments. Based on Theo Browne's tstack (MIT).",
+      "version": "0.1.0",
+      "keywords": [
+        "git",
+        "pull-requests",
+        "review"
+      ]
+    },
+    {
+      "name": "adr",
+      "source": "./plugins/adr",
+      "description": "Write, accept, reject or supersede Architecture Decision Records, with templates and scripts.",
+      "version": "0.1.0",
+      "keywords": [
+        "adr",
+        "docs"
+      ]
+    },
+    {
+      "name": "session-tools",
+      "source": "./plugins/session-tools",
+      "description": "Session housekeeping: hand off to a fresh session, edit CLAUDE.md and settings from a browser form. Claude Code only.",
+      "version": "0.1.1",
+      "keywords": [
+        "session",
+        "config"
+      ]
+    },
+    {
+      "name": "codegraph",
+      "source": "./plugins/codegraph",
+      "description": "The CodeGraph MCP server and its UserPromptSubmit hook that adds structural context to each prompt. Needs the codegraph CLI on PATH.",
+      "version": "0.1.0",
+      "keywords": [
+        "mcp",
+        "hooks",
+        "code-search"
+      ]
+    },
+    {
+      "name": "archify",
+      "source": {
+        "source": "git-subdir",
+        "url": "tt-a1i/archify",
+        "path": "archify",
+        "sha": "a4065941f12be7967436261d9934784e381d423c"
+      },
+      "description": "Upstream tt-a1i/archify (Apache-2.0), pinned: turn an idea, plan or codebase into an interactive architecture, sequence or data-flow diagram (self-contained HTML).",
+      "keywords": [
+        "diagrams",
+        "architecture",
+        "upstream"
+      ]
+    },
+    {
+      "name": "ponytail",
+      "source": {
+        "source": "github",
+        "repo": "DietrichGebert/ponytail",
+        "sha": "96608e078b2d5ea607c5c3b8b5a54d1c1fba6846"
+      },
+      "description": "Upstream DietrichGebert/ponytail (MIT), pinned: the simplest code that works (YAGNI, stdlib first). Its hooks need node on PATH.",
+      "keywords": [
+        "simplicity",
+        "review",
+        "upstream"
+      ]
+    },
+    {
+      "name": "caveman",
+      "source": {
+        "source": "github",
+        "repo": "JuliusBrussee/caveman",
+        "sha": "9b243662ff98d392bc0a95b865a554583d71be75"
+      },
+      "description": "Upstream JuliusBrussee/caveman (Apache-2.0), pinned: ultra-compressed communication mode that cuts filler and keeps technical detail. Its hooks need node on PATH.",
+      "keywords": [
+        "brevity",
+        "upstream"
+      ]
+    },
+    {
+      "name": "mcptoon",
+      "source": {
+        "source": "git-subdir",
+        "url": "activeing123/mcptoon",
+        "path": "claude-code-plugin",
+        "sha": "f50d199dcf509befdf265a58ea2278536a6d91ee"
+      },
+      "description": "Upstream activeing123/mcptoon (Apache-2.0), pinned: TOON gateway that compresses MCP tool catalogs behind a few gateway tools. Needs the mcptoon CLI (pip install mcptoon).",
+      "keywords": [
+        "mcp",
+        "tokens",
+        "upstream"
+      ]
+    }
+  ]
+}
