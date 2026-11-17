@@ -2,6 +2,34 @@
 
 A plugin marketplace for Claude Code and Codex: a few plugins of my own plus pinned references to upstream plugins I use. Upstream plugins are not copied here; each entry points at the upstream repository at a fixed commit.
 
+## Set it up with an agent
+
+Paste this into Claude Code or Codex, in any directory. It installs everything below and wires the TOON gateway; it asks before changing your agent configuration.
+
+```text
+Set up the agent-plugins marketplace (github.com/alexanderjerome/agent-plugins) for me. Read its
+README first; it is the reference. Then:
+
+1. Work out which agents I have: `claude --version`, `codex --version`. Do the steps below for each
+   one found, and skip the other.
+2. Prerequisites, installing what is missing with the package manager this machine already uses
+   (ask before installing anything system-wide): `gh` (tstack), `node` (ponytail, caveman, adr
+   scripts), the `codegraph` CLI (github.com/colbymchenry/codegraph, Claude only), and `mcptoon`
+   (`pipx install mcptoon` or `uv tool install mcptoon`).
+3. Claude Code: `claude plugin marketplace add alexanderjerome/agent-plugins`, then
+   `claude plugin install <name>@agent-plugins` for tstack, adr, session-tools, codegraph, archify,
+   ponytail, caveman and mcptoon.
+4. Codex: `codex plugin marketplace add alexanderjerome/agent-plugins`, then
+   `codex plugin add <name>@agent-plugins` for tstack, adr, ponytail and caveman. Codex has no
+   mcptoon plugin: register the gateway with `codex mcp add mcptoon -- mcptoon serve`.
+5. TOON gateway: run `mcptoon status` and show me what it found, then `mcptoon quickstart` to put my
+   existing MCP servers behind the gateway. Tell me what it changed and that `mcptoon off` or
+   `mcptoon restore` undoes it. Do not remove any MCP server yourself.
+6. Check: `claude plugin list` / `codex plugin list` show the plugins enabled, and `mcptoon manifest`
+   lists my servers' tools. Report what was installed, what was skipped and why, and anything that
+   needs me (a login, a restart of the agent).
+```
+
 ## Install
 
 Claude Code:
