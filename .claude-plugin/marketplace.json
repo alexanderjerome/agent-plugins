@@ -55,7 +55,7 @@
       "name": "archify",
       "source": {
         "source": "git-subdir",
-        "url": "tt-a1i/archify",
+        "url": "https://github.com/tt-a1i/archify.git",
         "path": "archify",
         "sha": "a4065941f12be7967436261d9934784e381d423c"
       },
@@ -97,7 +97,7 @@
       "name": "mcptoon",
       "source": {
         "source": "git-subdir",
-        "url": "activeing123/mcptoon",
+        "url": "https://github.com/activeing123/mcptoon.git",
         "path": "claude-code-plugin",
         "sha": "f50d199dcf509befdf265a58ea2278536a6d91ee"
       },
